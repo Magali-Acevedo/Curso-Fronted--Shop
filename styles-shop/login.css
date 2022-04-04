@@ -39,19 +39,11 @@ body {
 
 }
 .logo {
-    display: none;
-}
-.login-contenedor h1 {
-    font-size: var(--font-max);
-    margin-bottom: 15px;
-    text-align: center;
-}
-.subtitle {
-    font-size: var(--font-mid);
-    color: var(--dulce-de-leche);
-    margin-bottom: 30px;
+    display: block;
+    width: 95px;
+    margin:20px auto;
+    }
 
-}
 .form {
     height: 200px;
     display: flex;
@@ -73,6 +65,7 @@ label {
     outline: none;
 
 }
+
 .primary-button{
     height: 45px;
     background-color: var(--crema-rosado);
@@ -81,14 +74,31 @@ label {
     color: var(--white);
     font-weight: bold;
     font-size: 15px;
-    margin-top: 10px;
+    margin-top: 30px;
     cursor: pointer;
 }
+.login-contenedor a {
+    text-decoration: none;
+    font-size: var(--font-mid);
+    color: var(--dulce-de-leche);
+    margin-bottom: 30px;
+    text-align: center;
+}
+.secundary-button {
+    height: 45px;
+    border: 1px solid;
+    border-color: var(--crema-rosado);
+    border-radius: 8px;
+    color: var(--crema-rosado);
+    font-weight: bold;
+    font-size: var(--font-mid);
+}
 @media (max-width: 640px){
-    .logo {
-    display: block;
-    width: 95px;
-    margin:5px auto;
+    .login-contenedor {
+        height:70%;
+        display: flex;
+        justify-content: space-between;        
+
     }
 
 }

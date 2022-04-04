@@ -40,10 +40,13 @@ body {
 }
 .logo {
     display: none;
+
 }
 .icono-correo {
     width: 90px;
     margin: 15px auto;
+    
+    
 }
 .login-contenedor h1 {
     font-size: var(--font-max);
@@ -74,6 +77,7 @@ a {
     font-weight: 400;
     font-size: var(--font-min);
     padding-left: 10px;
+    text-decoration: none;
 }
 .form {
   
