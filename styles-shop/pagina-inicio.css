@@ -1,0 +1,24 @@
+:root {
+    --crema-rosado: #F7DAD9;
+    --beige-medio:#fff9f4;
+    --beige-frio:#DAD0C2;
+    --dulce-de-leche:#CDBBA7;
+    --gris-claro:#eff1f5;
+    --gris-medio:#cbcdd1;
+    --black:#000000;
+    --white:#ffffff;
+    --font-min:12px;
+    --font-mid:15px;
+    --font-max:24px;
+
+}
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Catamaran', sans-serif;
+    font-family: 'EB Garamond', serif;
+    
+}
