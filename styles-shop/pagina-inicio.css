@@ -20,5 +20,54 @@
 body {
     font-family: 'Catamaran', sans-serif;
     font-family: 'EB Garamond', serif;
+
+}
+
+.container-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fill,240px);
+    gap: 25px;
+    place-content: center;
+}
+.product-card {
+    width: 250px;
     
+}
+
+.product-card img {
+    width: 100%;
+    border-radius: 20px;
+    object-fit: cover;
+}
+.product-card figure img {
+    width: 30px;
+}
+.product-card p:nth-child(1) {
+    font-weight: bold;
+
+}
+.product-card p:nth-child(2){
+    color: var(--dulce-de-leche);
+}
+.container-desciption {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 4px;
+    padding-left: 4px;
+    padding-right: 4px;
+}
+
+@media(max-width:640px) {
+    .product-card {
+        width: 140px;
+        
+    }
+    
+    .container-cards {
+        display: grid;
+        grid-template-columns: repeat(auto-fill,140px);
+        gap: 25px;
+    
+    }
 }
