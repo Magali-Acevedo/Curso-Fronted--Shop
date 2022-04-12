@@ -1,0 +1,58 @@
+:root {
+    --crema-rosado: #F7DAD9;
+    --beige-medio:#fff9f4;
+    --beige-frio:#DAD0C2;
+    --dulce-de-leche:#CDBBA7;
+    --gris-claro:#eff1f5;
+    --gris-medio:#cbcdd1;
+    --black:#000000;
+    --white:#ffffff;
+    --font-min:12px;
+    --font-mid:15px;
+    --font-max:24px;
+
+}
+body{
+    padding: 0;
+    margin: 0;
+    
+}
+
+.desktop-menu {
+    width: 140px;
+    border: 1px solid var(--gris-medio);
+    height: 150px;
+    border-radius: 8px;
+   
+}
+
+.desktop-menu ul  {
+    list-style: none;
+   padding-right: 10px;
+    
+}
+
+.desktop-menu ul li {
+    text-align: end;
+}
+.desktop-menu ul li:last-child {
+    border-top: 1px solid var(--gris-medio);
+    padding-top: 15px;
+}
+.desktop-menu ul a {
+    text-decoration: none;
+    color: var(--black);
+    font-weight: bold;
+
+}
+
+.desktop-menu ul li:nth-child(1),
+.desktop-menu ul li:nth-child(2) {
+    padding-bottom: 15px;
+}
+.desktop-menu ul li:last-child a{
+    color: var(--crema-rosado);
+    font-size: var(--font-mid);
+    font-weight: 300;
+    
+}
