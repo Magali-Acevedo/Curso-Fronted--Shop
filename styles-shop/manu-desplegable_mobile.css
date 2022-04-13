@@ -1,0 +1,66 @@
+:root {
+    --crema-rosado: #F7DAD9;
+    --beige-medio:#fff9f4;
+    --beige-frio:#DAD0C2;
+    --dulce-de-leche:#CDBBA7;
+    --gris-claro:#eff1f5;
+    --black:#000000;
+    --white:#ffffff;
+    --font-min:12px;
+    --font-mid:15px;
+    --font-max:24px;
+
+}
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Catamaran', sans-serif;
+    font-family: 'EB Garamond', serif;
+    
+}
+.mobile-menu {
+    height: 100vh;
+    padding-top: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    
+}
+.mobile-menu ul {
+    list-style: none;
+    padding-left: 15px;
+}
+.mobile-menu ul:first-child {
+    border-bottom: 1px solid var(--gris-claro);
+    
+}
+.mobile-menu ul:nth-child(2){
+    padding-top: 22px;
+}
+.mobile-menu ul li {
+    padding-bottom: 22px;
+}
+
+.mobile-menu ul a {
+    text-decoration: none;
+    color: var(--black);
+    font-weight: bold;
+    font-size: var(--font-max);
+}
+.mobile-menu_footer{
+    padding-top: 10px;
+}
+.mobile-menu_footer li,
+.mobile-menu_footer li a  {
+    font-weight: 200;
+    font-size: var(--font-mid);
+
+}
+
+.mobile-menu_footer li a {
+    color: var(--crema-rosado);
+}
