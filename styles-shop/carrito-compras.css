@@ -1,0 +1,133 @@
+:root {
+    --crema-rosado: #F7DAD9;
+    --beige-medio:#fff9f4;
+    --beige-frio:#DAD0C2;
+    --dulce-de-leche:#CDBBA7;
+    --gris-claro:#eff1f5;
+    --gris-medio:#cbcdd1;
+    --black:#000000;
+    --white:#ffffff;
+    --font-min:12px;
+    --font-mid:16px;
+    --font-max:18px;
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+aside {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 380px;
+    min-height: 100vh;
+    position:absolute;
+    right: 0;
+}
+.order_container {
+ 
+
+    padding: 15px;
+    margin: 0 auto;
+    
+}
+
+.container-title {
+    display:flex;
+    align-items: baseline;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+.arrow {
+    width: 15px;
+    transform: rotate(180deg);
+}
+.container-title h1 {
+    font-size: var(--font-max);
+    padding-left: 10px;
+    
+
+}
+.order_container-art {
+    width: 320px;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--gris-claro);
+    padding: 20px;
+    border-radius: 8px;
+    margin: 30px  auto 0 auto;
+    
+}
+
+.order_container-art p:nth-child(1) {
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+}
+.order_container-art p:nth-child(2) {
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+}
+
+.order_container-art p span{
+    font-weight: bold;
+}
+.container-card {
+    padding: 20px 10px 0 0;
+    display: grid;
+    grid-template-columns: auto 1fr auto auto;
+    align-items: center;
+}
+.container-card span {
+    padding-left:12px ;
+    font-weight: 200;
+    color: var(--crema-rosado);
+}
+.container-card p {
+    font-weight: bold;
+    justify-self: end;
+}
+
+.container-card img:nth-child(1){
+    width: 100px;
+    border-radius: 12px;
+
+}
+
+.container-card img:nth-child(4){
+    width: 12px;
+    margin-left: 3px;
+}
+.primary-button{
+    height: 50px;
+    width: 320px;
+    background-color: var(--crema-rosado);
+    border: none;
+    border-radius: 8px;
+    color: var(--white);
+    font-weight: bold;
+    font-size: 15px;
+    margin: 25px auto 20px auto;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  
+}
+@media(max-width: 640px) {
+    .order_container h1,
+    .arrow {
+        display: none;
+    }
+    .container-title {
+        padding: 0px;
+    }
+    .order_container-art {
+        margin-top: 50px;
+    }
+}
