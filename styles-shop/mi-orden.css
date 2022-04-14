@@ -80,6 +80,9 @@ body {
 
 @media(max-width: 640px) {
     .order_container h1 {
-        display: block;
+        display: none;
+    }
+    .order_container-art {
+        margin-top: 50px;
     }
 }

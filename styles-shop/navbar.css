@@ -1,0 +1,132 @@
+:root {
+    --crema-rosado: #F7DAD9;
+    --beige-medio:#fff9f4;
+    --beige-frio:#DAD0C2;
+    --dulce-de-leche:#CDBBA7;
+    --gris-claro:#eff1f5;
+    --gris-medio:#cbcdd1;
+    --black:#000000;
+    --white:#ffffff;
+    --font-min:12px;
+    --font-mid:15px;
+    --font-max:24px;
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Catamaran', sans-serif;
+    font-family: 'EB Garamond', serif;
+    
+}
+nav {
+    justify-content: space-between;
+    border-bottom: 2px solid var(--gris-claro);
+    
+}
+.navbar-left ul{
+    width: 60vw;
+    height: 60px;
+    justify-content: space-around;
+}
+
+
+nav ,
+.navbar-left,
+.navbar-left ul,
+.navbar-right ul{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+}
+
+
+nav ul, 
+nav ul li a {
+    list-style: none;
+    text-decoration: none;
+    color: var(--gris-medio);
+    font-weight: bold;
+    font-size: var(--font-mid);
+
+
+}
+
+.navbar-left ul a:hover 
+ {
+    border: 2px solid var(--crema-rosado);
+    border-radius: 12px;
+    color: var(--crema-rosado);
+    padding: 10px;
+}
+.menu {
+    display: none;
+}
+.navbar-left img{
+    width: 100px;
+    padding: 10px;
+}
+
+.navbar-right {
+    display: flex;
+    justify-content: end;
+}
+.navbar-right_carrito {
+    width: 20px;
+    cursor: pointer;
+   
+}
+
+.navbar-right ul {
+    width: 30vh;
+    color: var(--black);
+    font-weight: 200;
+    font-size: var(--font-min);
+    display: flex;
+    justify-content: flex-end;
+    
+}
+.navbar-right ul li {
+    padding-right: 5px;
+}
+
+.navbar-right ul li:nth-child(4) p {
+    background-color: var(--crema-rosado);
+    width: 10px;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: var(--font-min);
+    text-align: center;
+    position: relative;
+    bottom: 10px;
+    right: 8px;
+
+} 
+.navbar-right_arrow {
+    width: 8px;
+    margin-right: 15px;
+    cursor: pointer;
+}
+
+@media (max-width: 640px) {
+    .menu {
+        display: block;
+        width: 20px;
+        margin-left: 10px;
+    }
+    .navbar-left ul,
+    .navbar-right ul li:nth-child(1),
+    .navbar-right ul li:nth-child(2)
+    {
+        display: none;
+    }
+    .navbar-right {
+        width: 40px;
+    }
+
+}
