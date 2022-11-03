@@ -11,7 +11,7 @@
     <nav>
       <img class="menu" src="../iconos-img/icon-menu.png" alt="icono menu" />
       <div class="navbar-left">
-        <img src="../iconos-img/logo-conexa.png" alt="logo" />
+        <img src="../iconos-img/shop.JPG" alt="logo" />
         <ul>
           <li>
             <a href="">Ver todo</a>
@@ -52,7 +52,7 @@
           </li>
 
           <li>
-            <p>2</p>
+            <p class="cardCounter"></p>
           </li>
         </ul>
       </div>
@@ -125,26 +125,14 @@
                 <img class="arrow" src="../iconos-img/flecha.png" alt="">
                 <h1>Carrito de Compras</h1>
             </div>
-    
+
             <div class="container-card" >
-                <img src="/iconos-img/pexels-jéshoots-21067.jpg" alt="">
-                <span>PlayStation</span>
-                <p>$100.000</p>
-                <img src="../iconos-img/close_icon.svg" alt="">
+                <img class="productShoppingImg" src="" alt="">
+                <span class="productShoppingTitle"></span>
+                <p class="productShoppingPrice"></p>
+                <img class="icon" src="../iconos-img/close_icon.svg" alt="">
             </div>
-            <div class="container-card" >
-                <img src="/iconos-img/pexels-jéshoots-21067.jpg" alt="">
-                <span>PlayStation</span>
-                <p>$100.000</p>
-                <img src="../iconos-img/close_icon.svg" alt="">
-            </div>
-            <div class="container-card" >
-                <img src="/iconos-img/pexels-jéshoots-21067.jpg" alt="">
-                <span>PlayStation</span>
-                <p>$100.000</p>
-                <img src="../iconos-img/close_icon.svg" alt="">
-            </div>
-    
+
             <div class="order_container-art" >
                 <p>
                     <span>
@@ -165,13 +153,36 @@
         </div>
     </aside>
 
-    </nav>
-
-    <section class="main-container" >
-      <div class="container-cards">
+    <aside class="productDetails inactivo">
+      <div class="icon-close">
+          <img src="../iconos-img/close_icon.svg" alt="">
+      </div>
+      <div class="container-card--info">
+          <img class="productDetailsImg" src="../iconos-img/pexels-jéshoots-21067.jpg" alt="">
+          <div class="card-puntos" >
+              <a href="/"></a>
+              <a href="/"></a>
+              <a href="/"></a>
+          </div>
+          <div class="container-card_description">
+              <span class="cardDescripcionPrice">$100.000</span>
+              <span class="cardDescripcionTitle">PlayStation</span>
+              <p class="cardDescripcionInfo">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Suscipit provident, temporibus autem commodi quia beatae est, harum sed, molestias quas quisquam eum similique excepturi non quasi voluptatem. Ut, ab placeat!</p>
+          </div>
 
       </div>
-    </section>
+      <button class="primary-button">
+          <img src="../iconos-img/carrito-blanco.png" alt="">
+          <span>Agregar al carrito</span>
+      </button>
+  </aside>
+    </nav>
+
+  <section class="main-container" >
+    <div class="container-cards">
+
+    </div>
+  </section>
     <script src="./main.js"></script>
   </body>
 </html>
